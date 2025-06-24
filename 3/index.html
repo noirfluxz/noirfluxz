@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecionamento</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .pulse-button {
+      background-color: #e60000;
+      color: white;
+      border: none;
+      padding: 18px 40px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+      transition: transform 0.2s;
+    }
+
+    .pulse-button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+      }
+      100% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Você tem mais de 18 anos?</h1>
+  <a href="https://julinha-axs.github.io/julinha/AXS/idade/julianabonde/index.html" target="_blank">
+    <button class="pulse-button">SIM</button>
+  </a>
+
+</body>
+</html>
